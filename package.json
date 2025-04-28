@@ -1,0 +1,30 @@
+{
+  "name": "my-mcp-test",
+  "version": "1.0.0",
+  "description": "mcpのtest用リポジトリ",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryota-nakazawa/my-mcp-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryota-nakazawa/my-mcp-test/issues"
+  },
+  "homepage": "https://github.com/ryota-nakazawa/my-mcp-test#readme",
+  "dependencies": {
+    "@types/node": "^22.15.3",
+    "fastmcp": "^1.23.0",
+    "openai": "^4.96.0",
+    "typescript": "^5.8.3",
+    "zod": "^3.24.3"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.3"
+  }
+}
