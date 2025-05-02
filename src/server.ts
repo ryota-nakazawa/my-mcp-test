@@ -3,16 +3,16 @@ import { z } from "zod";
 import OpenAI from "openai";
 
 const openai = new OpenAI({
-  apiKey: "sk-your-real-key-here",   // ← 直書き
+  apiKey: "sk-your-real-key-here",   // ← 今回は直書き
 });
 
-// 1. サーバーインスタンス生成
+//  サーバーインスタンス生成
 const server = new FastMCP({
   name: "My First MCP Server",
   version: "0.1.0",
 });
 
-// 2. ツールを 1 つ登録（a+b を返すだけ）
+// ツールを 1 つ登録（a+b を返すだけ）
 server.addTool({
   name: "add",
   description: "2 つの数値を加算します",
@@ -47,5 +47,5 @@ server.addTool({
 });
 
 
-// 3. 標準入出力(stdio)で待ち受け
+// 標準入出力(stdio)で待ち受け
 server.start({ transportType: "stdio" });
